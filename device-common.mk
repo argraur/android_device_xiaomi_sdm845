@@ -53,6 +53,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
+# QTI
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
+
 # RCS
 PRODUCT_PACKAGES += \
     rcs_service_aidl \
