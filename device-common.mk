@@ -22,6 +22,10 @@ LOCAL_PATH := device/xiaomi/sdm845
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+# AID/fs configs
+PRODUCT_PACKAGES += \
+    fs_config_files
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default
