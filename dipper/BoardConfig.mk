@@ -16,6 +16,8 @@
 
 DEVICE_PATH := device/xiaomi/sdm845/dipper
 
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
+
 # NFC
 TARGET_USES_NQ_NFC := true
 
