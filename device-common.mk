@@ -83,7 +83,11 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    power.qcom:64
+    android.hardware.power@1.2-service.xiaomi_sdm845-libperfmgr
+
+# Powerhint
+PRODUCT_COPY_FILES += \
+    device/xiaomi/sdm845/powerhint.json:system/etc/powerhint.json
 
 # QTI
 PRODUCT_COPY_FILES += \
