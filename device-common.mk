@@ -39,7 +39,9 @@ PRODUCT_COPY_FILES += \
 
 # Common init scripts
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init.qcom.rc:system/etc/init/init.qcom.rc
+    $(LOCAL_PATH)/init.hardware.rc:system/etc/init/init.hardware.rc \
+    $(LOCAL_PATH)/init.qcom.rc:system/etc/init/init.qcom.rc \
+    $(LOCAL_PATH)/init.power.rc:system/etc/init/init.power.rc
 
 # Display
 PRODUCT_PACKAGES += \
@@ -83,7 +85,10 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    power.qcom:64
+    android.hardware.power@1.2-service.xiaomi_sdm845-libperfmgr
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/powerhint.json:system/etc/powerhint.json
 
 # QTI
 PRODUCT_COPY_FILES += \
