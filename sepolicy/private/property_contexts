@@ -1,1 +1,2 @@
+powerhal.audio u:object_r:power_prop:s0
 powerhal.state u:object_r:power_prop:s0
