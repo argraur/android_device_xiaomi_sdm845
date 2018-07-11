@@ -33,6 +33,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio.a2dp.default
 
+# Common init scripts
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init.qcom.rc:system/etc/init/init.qcom.rc
+
 # Display
 PRODUCT_PACKAGES += \
     libvulkan
