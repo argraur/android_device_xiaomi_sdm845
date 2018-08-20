@@ -68,5 +68,9 @@ PRODUCT_PACKAGES += \
     SecureElement \
     Tag
 
+# Hide
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay
+
 # Inherit from common sdm845 device config
 $(call inherit-product, device/xiaomi/sdm845/device-common.mk)
