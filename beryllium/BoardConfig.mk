@@ -1,5 +1,6 @@
 #
-# Copyright 2015 The Android Open Source Project
+# Copyright (C) 2018 Pixel3ROM Project
+#               2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,6 +15,7 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_beryllium.mk \
-    $(LOCAL_DIR)/aosp_dipper.mk
+DEVICE_PATH := device/xiaomi/sdm845/beryllium
+
+include device/xiaomi/sdm845/BoardConfig-common.mk
+-include vendor/xiaomi/beryllium/BoardConfigVendor.mk
