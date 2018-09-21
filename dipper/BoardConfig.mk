@@ -16,5 +16,8 @@
 
 DEVICE_PATH := device/xiaomi/sdm845/dipper
 
+# NFC
+TARGET_USES_NQ_NFC := true
+
 include device/xiaomi/sdm845/BoardConfig-common.mk
 -include vendor/xiaomi/dipper/BoardConfigVendor.mk

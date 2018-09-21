@@ -41,5 +41,15 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl \
     $(LOCAL_PATH)/uinput-goodix.kl:system/usr/keylayout/uinput-goodix.kl
 
+# NFC
+PRODUCT_PACKAGES += \
+    com.android.nfc_extras \
+    com.nxp.nfc.nq \
+    nqnfcee_access.xml \
+    nqnfcse_access.xml \
+    NQNfcNci \
+    SecureElement \
+    Tag
+
 # Inherit from common sdm845 device config
 $(call inherit-product, device/xiaomi/sdm845/device-common.mk)
