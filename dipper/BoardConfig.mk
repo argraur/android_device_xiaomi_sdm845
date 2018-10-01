@@ -19,5 +19,8 @@ DEVICE_PATH := device/xiaomi/sdm845/dipper
 # NFC
 TARGET_USES_NQ_NFC := true
 
+# SEPolicy
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+
 include device/xiaomi/sdm845/BoardConfig-common.mk
 -include vendor/xiaomi/dipper/BoardConfigVendor.mk
