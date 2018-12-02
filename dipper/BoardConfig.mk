@@ -18,6 +18,9 @@ DEVICE_PATH := device/xiaomi/sdm845/dipper
 
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
+# Camera
+TARGET_FACE_UNLOCK_CAMERA_ID := 5
+
 # NFC
 TARGET_USES_NQ_NFC := true
 
