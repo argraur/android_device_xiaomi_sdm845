@@ -120,6 +120,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vndk-sp
 
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libnl \
+    WfdCommon
+
 # Preopt SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUIGoogle
