@@ -1,1 +1,8 @@
 type sysfs_msm_subsys, sysfs_type, fs_type;
+type sysfs_devfreq, sysfs_type, fs_type;
+
+# kgsl file type for sysfs access
+type sysfs_kgsl, sysfs_type, fs_type;
+
+#Define mpdecision device
+type device_latency, dev_type;
