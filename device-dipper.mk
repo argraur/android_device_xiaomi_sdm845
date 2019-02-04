@@ -29,12 +29,14 @@ endif
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
+# Properties
+TARGET_SYSTEM_PROP := \
+    $(LOCAL_PATH)/../system.prop \
+    $(LOCAL_PATH)/system.prop
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
-
-# Properties
--include $(LOCAL_PATH)/device-props.mk
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
